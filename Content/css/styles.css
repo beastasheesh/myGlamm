@@ -1,0 +1,178 @@
+<<<<<<< HEAD
+=======
+.orange{
+  color: orange;
+}
+
+>>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
+body{
+  font-family: Helvetica;
+  margin: 0;
+}
+
+h1,h2,h3{
+  margin: 0;
+}
+
+.filters{
+  width: 100%;
+  display: inline-block;
+}
+
+#filterByCities{
+  width: 200px;
+  float: left;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777;
+  border: 1;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 16px;
+}
+
+<<<<<<< HEAD
+#filterByCities select{
+  width: 100px;
+  float: right;
+  background: #fff;
+  padding: 10px;
+  border-radius:20px;
+  cursor: pointer;
+  color: #777;
+  border: 1;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 12px;
+}
+
+#filterByAppStatus{
+  width: 300px;
+=======
+#filterByAppStatus{
+  width: 200px;
+>>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
+  float: right;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #777;
+  border: 1;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 16px;
+}
+
+<<<<<<< HEAD
+#filterByAppStatus select{
+  width: 100px;
+  float: right;
+  background: #fff;
+  padding: 10px;
+  border-radius:20px;
+  cursor: pointer;
+  color: #777;
+  border: 1;
+  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  font-size: 12px;
+}
+
+=======
+>>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
+#menu-bar{
+  background: crimson;
+  color: #fff;
+  padding: 10px;
+}
+
+#menu-bar h1{
+  font-size: 24px;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.content{
+  padding: 20px;
+  overflow: hidden;
+}
+
+.content input{
+  float: none;
+  width: 40%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 10px 0;
+}
+
+.displayBookings{
+<<<<<<< HEAD
+  width: 90%;
+  margin-left: 50px;
+  table-layout: fixed;
+  position: fixed;
+  padding: 30px;
+=======
+  padding: 20px;
+>>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
+  overflow: hidden;
+}
+
+.displayBookings thead tr th{
+  font-family: Helvetica;
+<<<<<<< HEAD
+  font-size: 12;
+=======
+>>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
+  padding: 5px 5px 5px 5px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+<<<<<<< HEAD
+.displayBookings tbody tr td{
+  font-family: Helvetica;
+  font-size: 12;
+  padding: 10px 0px 0px 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+#appStatus{
+  padding-right: 10px;
+  word-wrap: break-word;
+}
+
+.displayBookings tbody tr td li{
+  float: left;
+  margin: -10px 0px 10px -30px;
+}
+
+dir-pagination-controls{
+  display: table;
+  margin: 0 auto;
+}
+
+dir-pagination-controls ul li{
+  list-style-type: none;
+  float: left;
+  border: 2px solid #ddd;
+  width: 50px;
+}
+
+#footer{
+    position:fixed;
+    color: #fff;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:15px;
+}
+=======
+.displayBookings thead tr td{
+  font-family: Helvetica;
+  padding: 20px 20px 20px 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+>>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
