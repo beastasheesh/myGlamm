@@ -31,4 +31,16 @@ myApp.controller("MainController", ['$scope', '$http', function($scope, $http){
       });
     });
 
+    $scope.orderAppStatus = function(item){
+      if($scope.appStatus == undefined){
+        return true;
+      }
+      else {
+        if(item.appointment.status.toLowerCase().indexOf($scope.appStatus.toLowerCase()) != -1){
+          return true;
+        }
+      }
+      return false;
+    };
+
 }]);

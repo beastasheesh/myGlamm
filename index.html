@@ -13,17 +13,21 @@
     <header ng-include="'header.html'"></header>
     <div class="content">
       <div class="filters">
-        <div id="filterByCities">
-          Sort by City:
-          <select ng-model="orderCity">
-            <option ng-repeat="city in cityArray" value="{{city}}">{{city}}</option>
-          </select>
+        <div class="filterBy">
+          <div class="filterNames">City:</div>
+          <div class="filterDropDowns">
+            <select ng-model="orderCity">
+              <option ng-repeat="city in cityArray" value="{{city}}">{{city}}</option>
+            </select>
+          </div>
         </div>
-        <div id="filterByAppStatus">
-          <span>Sort by Application Status:</span>
-          <select ng-model="orderAppStatus">
-            <option ng-repeat="status in statusArray" value="{{status}}" place>{{status}}</option>
-          </select>
+        <div class="filterBy">
+          <div class="filterNames">Status:</div>
+          <div class="filterDropDowns">
+            <select ng-model="appStatus">
+              <option ng-repeat="status in statusArray" value="{{status}}" place>{{status}}</option>
+            </select>
+          </div>
         </div>
       </div>
       <center><input type="text" ng-model="searchBooking" placeholder="Search for a booking" /><center>
@@ -44,7 +48,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr dir-paginate="booking in bookings.appointments | filter: searchBooking | filter: orderAppStatus | filter: orderCity | itemsPerPage: 5">
+          <tr dir-paginate="booking in bookings.appointments | filter: searchBooking | filter: orderAppStatus |
+            filter: orderCity | itemsPerPage: 5">
             <td>{{booking.appointment.appointmentId}}</td>
             <td>{{booking.appointment.appointmentStartTS | date: "dd/MM/yyyy"}}</td>
             <td>{{booking.appointment.appointmentStartTS | date: "h:mm a"}}</td>
@@ -62,9 +67,9 @@
         </tbody>
       </table>
     </div>
-    <div class="">
-      <section id="footer">
-        <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true" auto-hide="true"></dir-pagination-controls>
+    <div>
+      <section>
+        <dir-pagination-controls id="footer" max-size="7" auto-hide="true"></dir-pagination-controls>
       </section>
     </div>
   </body>
