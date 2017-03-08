@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <html ng-app="myApp">
 
   <head>
@@ -62,70 +61,11 @@
           </tr>
         </tbody>
       </table>
+    </div>
+    <div class="">
       <section id="footer">
         <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true" auto-hide="true"></dir-pagination-controls>
       </section>
     </div>
-
   </body>
 </html>
-=======
-<html ng-app="myApp">
-
-  <head>
-    <title>Bookings</title>
-    <link rel="stylesheet" href="Content\css\styles.css">
-    <script src="app\lib\angular.min.js"></script>
-    <script src="app\app.js"></script>
-  </head>
-
-  <body ng-controller="MainController">
-
-    <header ng-include="'header.html'"></header>
-    <div class="content">
-      <div class="filters">
-        <select id="filterByCities" ng-model="orderCity">
-          <option ng-repeat="booking in bookings.appointments" value="{{booking.appointment.city.name}}">{{booking.appointment.city.name}}</option>
-        </select>
-        <select id="filterByAppStatus" ng-model="orderAppStatus">
-          <option ng-repeat="booking in bookings.appointments" value="{{booking.appointment.status}}">{{booking.appointment.status}}</option>
-        </select>
-      </div>
-      <center><input type="text" ng-model="searchBooking" placeholder="Search for a booking" /><center>
-      <table class="displayBookings">
-        <thead>
-          <tr>
-            <th>Appointment Id</th>
-            <th>Appointment Start Date</th>
-            <th>Appointment Start Time</th>
-            <th>City</th>
-            <th>Appointment Status</th>
-            <th>Consumer Name</th>
-            <th>Consumer Mobile Number</th>
-            <th>Franchise Name</th>
-            <th>Artist Name</th>
-            <th>Services</th>
-            <th>Booking Final Amount</th>
-          </tr>
-          <tr ng-repeat="booking in bookings.appointments | filter: orderCity | filter: orderAppStatus | limitTo: 5 | filter: searchBooking">
-            <td>{{booking.appointment.appointmentId}}</td>
-            <td>{{booking.appointment.appointmentStartTS | date: "dd/MM/yyyy"}}</td>
-            <td>{{booking.appointment.appointmentStartTS | date: "h:mm a"}}</td>
-            <td>{{booking.appointment.city.name | uppercase}}</td>
-            <td>{{booking.appointment.status}}</td>
-            <td>{{booking.consumer.firstName | uppercase}}</td>
-            <td>{{booking.consumer.mobileNumber}}</td>
-            <td>{{booking.franchise.franchiseName | uppercase}}</td>
-            <td>{{booking.artist.firstName | uppercase}}</td>
-            <td><span ng-repeat="service in booking.subCategories"><ul>
-              <li style="float: left;">{{service.name}}</li>
-            </ul></span><br></td>
-            <td>{{booking.payment.finalAmount}}</td>
-          </tr>
-        </thead>
-      </table>
-    </div>
-
-  </body>
-</html>
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1

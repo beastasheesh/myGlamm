@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-.orange{
-  color: orange;
-}
-
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
 body{
   font-family: Helvetica;
   margin: 0;
@@ -32,7 +25,6 @@ h1,h2,h3{
   font-size: 16px;
 }
 
-<<<<<<< HEAD
 #filterByCities select{
   width: 100px;
   float: right;
@@ -48,10 +40,6 @@ h1,h2,h3{
 
 #filterByAppStatus{
   width: 300px;
-=======
-#filterByAppStatus{
-  width: 200px;
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
   float: right;
   background: #fff;
   padding: 10px;
@@ -63,7 +51,6 @@ h1,h2,h3{
   font-size: 16px;
 }
 
-<<<<<<< HEAD
 #filterByAppStatus select{
   width: 100px;
   float: right;
@@ -77,8 +64,6 @@ h1,h2,h3{
   font-size: 12px;
 }
 
-=======
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
 #menu-bar{
   background: crimson;
   color: #fff;
@@ -106,34 +91,24 @@ h1,h2,h3{
 }
 
 .displayBookings{
-<<<<<<< HEAD
   width: 90%;
   margin-left: 50px;
-  table-layout: fixed;
-  position: fixed;
   padding: 30px;
-=======
-  padding: 20px;
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
   overflow: hidden;
 }
 
 .displayBookings thead tr th{
   font-family: Helvetica;
-<<<<<<< HEAD
   font-size: 12;
-=======
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
   padding: 5px 5px 5px 5px;
   border: 2px solid #ddd;
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
 .displayBookings tbody tr td{
   font-family: Helvetica;
   font-size: 12;
-  padding: 10px 0px 0px 10px;
+  padding: 10px 10px 0px 10px;
   border: 2px solid #ddd;
   border-radius: 10px;
 }
@@ -161,18 +136,9 @@ dir-pagination-controls ul li{
 }
 
 #footer{
-    position:fixed;
     color: #fff;
     bottom:0px;
     left:0px;
     right:0px;
     margin-bottom:15px;
 }
-=======
-.displayBookings thead tr td{
-  font-family: Helvetica;
-  padding: 20px 20px 20px 20px;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-}
->>>>>>> 457ef48dcde0577c8df7eaf0ca60e913759f09b1
