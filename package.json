@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/beastasheesh/myglamm#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-uglify": "^2.1.0"
